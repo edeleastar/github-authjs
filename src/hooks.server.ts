@@ -7,6 +7,7 @@ import {
 import GithubProvider from "@auth/core/providers/github";
 
 const auth = SvelteKitAuth({
+  bastPath: "/auth",
   providers: [
     // @ts-ignore
     GithubProvider({
