@@ -10,7 +10,7 @@
   <h1>Hello there! This is the shared layout.</h1>
 
   {#if loggedIn}
-    <div>Welcome!</div>
+    <div>Welcome {data.user.name}!</div>
     <a href="/logged-in">Go to logged in area</a>
     <br />
     <br />

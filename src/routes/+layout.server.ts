@@ -1,9 +1,11 @@
 export const load = async ({ locals }) => {
-  const session = await locals.getSession();
-  console.log({ session });
-  const loggedIn = !!session?.user;
+  // const session = await locals.getSession();
+  const loggedIn = false; //!!session?.user;
+
+  const user = null; //session?.user;
 
   return {
-    loggedIn
+    loggedIn,
+    user
   };
 };
