@@ -1,8 +1,8 @@
 export const load = async ({ locals }) => {
   const session = await locals.getSession();
-  const loggedIn = false; //!!session?.user;
+  const loggedIn = !!session?.user;
 
-  const user = null; //session?.user;
+  const user = session?.user;
 
   return {
     loggedIn,

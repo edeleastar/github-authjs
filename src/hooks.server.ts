@@ -22,7 +22,8 @@ const auth = SvelteKitAuth({
     strategy: "jwt"
   },
 
-  secret: PRIVATE_AUTH_SECRET
+  secret: PRIVATE_AUTH_SECRET,
+  trustHost: true
 });
 
 export const handle = auth;
